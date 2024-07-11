@@ -143,7 +143,7 @@ section {
     .parta {
         h1{
             font-size: 2rem;
-            color: black;
+            color: #212529!important;
             padding: 1% 3%;
             margin: 1% 0%;
         }
@@ -166,7 +166,7 @@ section {
             border-left: solid 1px grey;
             padding: 0% 2% 1rem;
             margin-bottom: 2rem;
-            color: black;
+            color: #212529!important;
         }
         p{
             padding: 1% 2%;
@@ -174,7 +174,7 @@ section {
             border-radius: 0px 10px;
             background-color: rgba(240, 255, 255, 0.5);
             box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
-            color: black;
+            color: #212529!important;
         }
     }
     .part3 {
@@ -195,6 +195,7 @@ section {
         p{
             padding: 1% 3%;
             margin: 1% 0%;
+            color: #212529!important
         }
     }
 }
@@ -218,6 +219,7 @@ section {
         background-color: white;
         h1 {
             font-size: 2rem;
+            color: #212529!important
         }
         h1::first-letter{
             color: #E9C0B3;
@@ -244,6 +246,7 @@ section {
             writing-mode: vertical-lr;
             transform: rotateZ(180deg);
             padding-bottom: 5rem;
+            color: #212529!important
         }
     }
     .part5 {
@@ -255,6 +258,7 @@ section {
             padding: 2rem 0 1rem;
             border-bottom: 1px solid grey;
             margin-bottom: 1.5rem;
+            color: #212529!important
         }
         span {
             width: 1rem;
@@ -263,6 +267,9 @@ section {
             float: left;
             margin: 3px 3px 0px 0px;
             background-color: #E9C0B3;
+        }
+        p {
+            color: #212529!important;
         }
     }
 }
@@ -285,6 +292,7 @@ section {
             font-size: 2rem;
             padding-left: 2rem;
             margin-bottom: 0;
+            color: #212529!important;
         }
         h1::first-letter{
             color: #E9C0B3;
@@ -297,14 +305,14 @@ section {
         padding: 10%;
         ul {
             font-size: 1.5rem;
-            color: grey;
+            color: grey!important;
             li {
                 padding: 1rem 2rem 1rem 0;
                 font-weight: lighter;
                 letter-spacing: 0.5rem;
                 a {
                     text-decoration: none;
-                    color: grey;
+                    color: grey!important;
                     transition: font-weight 0.1s;
                 }
                 a:hover {
@@ -322,7 +330,7 @@ section {
         h2 {
             text-align: center;
             font-size: 1.5rem;
-            color: grey;
+            color: grey!important;
             font-weight: light;
         }
         .espacio {
