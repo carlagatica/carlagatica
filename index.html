@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/color-modes.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Carla Nair Gatica Bimbi</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars-offcanvas/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="parallax">
+    <header>
+        <nav class="navbar py-0" aria-label="Light offcanvas navbar">
+            <div class="container-fluid">
+              <!--<a class="navbar-brand" href="#">Light offcanvas navbar</a>-->
+              <button class="navbar-toggler position-fixed top-0 start-0 mt-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">Carla Nair Gatica Bimbi</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#home" onclick="openCard('home')">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#aboutme" onclick="openCard('aboutme')">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience" onclick="openCard('experience')">My experiece</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" onclick="openCard('portfolio')">Portfolio</a>
+                    </li>
+                    <!--<li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>-->
+                  </ul>
+                  <!--<form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>-->
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+        <section class="main" id="home">
+            <div>
+                <p class="etitle">CARLA NAIR GATICA BIMBI</p>
+            </div>
+        </section>
+        <!-- ABOUT ME -->
+        <section class="hiding" id="aboutme">
+          <div class="row mb-3 text-center about ">
+            <div class="col-sm-8 part1">
+              <div>
+                <img src="img/carlagatica.jpg" alt="image" class="banner">
+              </div>
+              <div class="row">
+                <div class="col-md-12 parta">
+                  <h1>About me</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 part2">
+                  <h2>Subtitulo</h2>
+                  <p>Mas cosas</p>
+                </div>
+                <div class="col-md-4 part2">
+                  <h2>Subtitulo</h2>
+                  <p>Mas cosas</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 part3">
+              <h2>El lateral</h2>
+            </div>
+          </div>
+        </section>
+        <!-- Experience -->
+        <section class="experience hiding" id="experience">
+          <div class="row">
+            <div class="col-2 part1">
+              p
+            </div>
+            <div class="col-10 part2">
+                <h1>My Experience</h1>
+            </div>
+            <div class="col-2 part3">
+              <img src="img/carla1.jpg">
+            </div>
+            <div class="col-10 part4">
+              <h2>My Experience</h2>
+            </div>
+            <div class="col-10 part5">
+              <h2>My Experience</h2>
+              <div>
+                <span></span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, qui?</p>
+              </div>
+              <div>
+                <span></span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, qui?</p>
+              </div>
+              <div>
+                <span></span><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, qui?</p>
+              </div>
+            </div>
+        </section>
+        <!-- Portfolio -->
+        <section class="portfolio hiding" id="portfolio">
+
+          <div class="row">
+            <div class="col-2 part1">
+              p
+            </div>
+            <div class="col-8 part2">
+              <h1>Portfolio</h1>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-10 part3">
+              <ul>
+                <li><a href="#disenios" onclick="openGallery('disenios')">Diseños</a></li>
+                <li><a href="#musica" onclick="openGallery('musica')">Música</a></li>
+                <li><a href="#videojuegos" onclick="openGallery('videojuegos')">Videojuegos</a></li>
+                <li><a href="#redes" onclick="openGallery('redes')">Redes sociales</a></li>
+              </ul>
+            </div>
+            
+            <div class="part4">
+              <h2>Galeria</h2>
+              <div class="galeria muestra" id="disenios">
+                <div class="row">
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                </div>
+              </div>
+
+              <div class="galeria oculta" id="musica">
+                <div class="row">
+                  <div class="col-4 espacio">
+                    musica<img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                </div>
+              </div>
+
+              <div class="galeria oculta" id="videojuegos">
+                <div class="row">
+                  <div class="col-4 espacio">
+                    videojuegos<img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                </div>
+              </div>
+
+              <div class="galeria oculta" id="redes">
+                <div class="row">
+                  <div class="col-4 espacio">
+                    redes sociales<img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                  <div class="col-4 espacio">
+                    <img src="img/images.jpg">
+                  </div>
+                </div>
+              </div>
+              
+        </section>
+    
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/show-hide.js"></script>
+<script src="js/galeria.js"></script>
+</html>
