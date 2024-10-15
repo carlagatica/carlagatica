@@ -32,7 +32,15 @@ section {
     -moz-user-select: none;
     user-select: none;
 }
-
+.badge-secondary {
+    color: white;
+    background-color: #212529;
+}
+.badge-pill {
+    padding-right: 0.6em ;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
@@ -100,6 +108,13 @@ section {
 .bd-mode-toggle .dropdown-menu .active .bi {
     display: block !important;
 }
+
+.language {
+    position: absolute!important;
+    top: 10px;
+    right: 10px;
+}
+
 /*BACKGROUND*/  
 .parallax {
     background-image: url('../img/mixer.jpg');
@@ -164,26 +179,43 @@ section {
             font-size: 1.5rem;
             border-bottom: solid 1px grey;
             border-left: solid 1px grey;
-            padding: 0% 2% 1rem;
+            padding: 0% 2% 1%;
+            text-align: left;
             margin-bottom: 2rem;
             color: #212529!important;
         }
+        h4 {
+            font-size: 1.2rem;
+        }
+        h5 {
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #212529!important;
+            text-align: left;
+            margin-bottom: 0.2rem;
+            margin-top: 0.7rem;
+        }
         p{
+            color: #212529!important;
+            text-align: left;
+            margin-bottom: 0.2rem;
+        }
+        .minicont {
             padding: 1% 2%;
             margin: 1% 0%;
             border-radius: 0px 10px;
             background-color: rgba(240, 255, 255, 0.5);
             box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
             color: #212529!important;
+            text-align: left;
         }
     }
     .part3 {
         background-color: #E9C0B3;
-        height: 100%;
         width: 30%;
         h2 {
             font-size: 1.5rem;
-            color: grey;
+            color: #808080;
             padding: 1% 3%;
             margin: 1% 0%;
         }
@@ -192,10 +224,44 @@ section {
             font-size: 2rem;
             font-weight: bolder;
         }
+        h6 {
+            font-size: 0.6!important;
+            font-weight: lighter;
+        }
         p{
             padding: 1% 3%;
             margin: 1% 0%;
-            color: #212529!important
+            color: #212529!important;
+            text-align: left;
+        }
+        .icon::before {
+            display: inline-block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+          }
+        .brush::before {
+            padding-right: 0.7rem;
+            font: var(--fa-font-solid);
+            content: '\f1fc';
+            color: white;
+        }
+        .game::before {
+            padding-right: 0.7rem;
+            font: var(--fa-font-solid);
+            content: '\f11b';
+            color: white;
+        }
+        .design::before {
+            padding-right: 0.7rem;
+            font: var(--fa-font-solid);
+            content: '\f247';
+            color: white;
+        }
+        .code::before {
+            padding-right: 0.7rem;
+            font: var(--fa-font-solid);
+            content: '\f121';
+            color: white;
         }
     }
 }
@@ -248,6 +314,7 @@ section {
             padding-bottom: 5rem;
             color: #212529!important
         }
+
     }
     .part5 {
         padding: 0rem 5rem;
@@ -308,7 +375,7 @@ section {
             color: grey!important;
             li {
                 padding: 1rem 2rem 1rem 0;
-                font-weight: lighter;
+                font-weight: 200;
                 letter-spacing: 0.5rem;
                 a {
                     text-decoration: none;
@@ -332,6 +399,15 @@ section {
             font-size: 1.5rem;
             color: grey!important;
             font-weight: light;
+        }
+        p {
+            color: grey;
+            text-transform: lowercase;
+            font-weight: 200;
+        }
+        iframe {
+            display: block;
+            margin: 0 auto;
         }
         .espacio {
             padding: 1rem;
