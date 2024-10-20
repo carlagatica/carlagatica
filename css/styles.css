@@ -1,6 +1,7 @@
 * {
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    overflow: hidden;
 }
 html, body {
     height: 100%;
@@ -144,6 +145,7 @@ section {
 /*about*/
 .about {
     width: 100%;
+    overflow-y: scroll;
     height: 100%;
     .part1 {
         background-color: white;
@@ -347,7 +349,7 @@ section {
     .part1 {
         background-color: #E9C0B3;
         color: #E9C0B3;
-        width: 10%;
+        width: 7%;
         object-fit: cover;
     }
     .part2 {
@@ -369,7 +371,7 @@ section {
     }
     .part3 {
         width: 30%;
-        padding: 10%;
+        padding: 5%;
         ul {
             font-size: 1.5rem;
             color: grey!important;
@@ -430,4 +432,84 @@ section {
 }
 .oculta {
     display: none;
+}
+
+/* adaptive web */
+/* Celulares */
+@media only screen and (max-width: 600px) {
+
+    .etitle {
+        font-size: 4rem;
+        padding: 5% 15%;
+        margin: 50% 0%;
+        vertical-align: middle;
+    }
+    [class*="col-"] {
+        width: 100%!important;
+    }
+    .experience {
+        .part1 {
+            font-size: 3rem;
+        }
+        .part2 {
+            padding: 2rem 0;
+        }
+        .part3 {
+            height: 20rem;
+            align-self: center;
+            overflow-y: hidden;
+            img {
+                position: relative;
+                top: -5rem;
+            }
+        }
+        .part4 {
+            display: none;
+        }
+    }
+    .portfolio {
+        .part1 {
+            font-size: 3rem;
+        }
+        .part2 {
+            padding-top: 2rem;
+        }
+        .part4 {
+            width: 100%;
+        }
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+/*Tablets*/
+@media only screen and (min-width: 600px ) and (max-width: 1024px) {
+    .etitle {
+        font-size: 6rem;
+        padding: 5% 15%;
+        margin: 40% 0%;
+        vertical-align: middle;
+    }
+    .experience {
+        .part3 {
+            img {
+                position: relative;
+                left: -5rem;
+            }
+        }
+        .part4 {
+            width: 10%;
+        }
+    }
+}
+/*Pc lower res*/
+@media only screen and (min-width: 1025px ) and (max-width: 1919px) {
+    .etitle {
+        font-size: 8rem;
+        padding: 5% 15%;
+        margin: 7% 0%;
+        vertical-align: middle;
+    }
+
 }
