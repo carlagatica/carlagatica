@@ -11,7 +11,9 @@ section {
 }
 
 /*NAVBAR*/
-
+.navbar {
+    z-index: 1000;
+}
 .navbar-toggler-icon {
     filter:brightness(100);
 }
@@ -267,6 +269,7 @@ section {
 
 /* experience */
 .experience{
+    overflow-y: scroll;
     width: 100%; 
     background-color: white;
     .part1 {
@@ -280,6 +283,7 @@ section {
         width: 90%;
         background-color: white;
         h1 {
+            margin: 0 0 0 1.5rem;
             font-size: 2rem;
             color: #212529!important
         }
@@ -291,6 +295,7 @@ section {
     }
     .part3 {
         filter: grayscale(100);
+        background-color: rgba(0, 0, 0, 0);
         width: 10%;
         object-fit: cover; 
         img {
@@ -323,13 +328,60 @@ section {
             margin-bottom: 1.5rem;
             color: #212529!important
         }
-        span {
-            width: 1rem;
-            height: 1rem;
+        span { 
             display: block;
             float: left;
             margin: 3px 3px 0px 0px;
+        }
+        .badge-pill {
+            background-color: #212529;
+            color: #E9C0B3;
+        }
+        ul {
+            padding: 0;
+            font-size: 0.8rem;
+        }
+        li::before {
+            content: "✎";
+            background: lightgray;
+            border-radius: 1ch;
+            padding-inline: 1ch;
+            margin-inline-end: 1ch;
+          }
+        .date {
+            width: 6rem;
+            padding: 0 0.3rem;
+            margin: 0 0.2rem 2rem;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            font-size: 0.6rem;
+            line-height: 18px;
+            color: gray;
+            font-weight: 400;
+            border: 1px solid gray;
             background-color: #E9C0B3;
+            border-radius: 4px;
+            box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5)
+        }
+        .name {
+            padding: 0 0.5rem;
+            font-size: 1rem;
+            color: #212529;
+            font-weight: 500;   
+        }
+        .company {
+            padding: 0 0.5rem;
+            font-size: 1rem;
+            color: #212529;
+            font-weight: 400;
+            text-transform: none;
+        }      
+        .p1 {
+            padding: 0 0.5rem 1.5rem;
+            font-size: 0.8rem;
+            color: #212529;
+            text-transform: none;
         }
         p {
             color: #212529!important;
@@ -417,7 +469,7 @@ section {
                 transition: scale 1s, box-shadow 1s;
             }
             img:hover {
-                box-shadow: 7px 7px 5px 5px rgba(0, 0, 0, .1) ;
+                box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7) ;
                 scale: 105%;   
             }
             .row {
