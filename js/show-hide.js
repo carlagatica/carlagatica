@@ -12,5 +12,6 @@ function openCard(linkname) {
   card = document.getElementById(linkname);
   card.classList.add("showing");
   card.classList.remove("hiding");
-};
+}
+
   

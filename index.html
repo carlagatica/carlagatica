@@ -32,34 +32,35 @@
 
         <nav class="navbar py-0" aria-label="Light offcanvas navbar">
           <div class="container-fluid">
-            <!--<a class="navbar-brand" href="#">Light offcanvas navbar</a>-->
-            <button class="navbar-toggler position-fixed top-0 start-0 mt-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
+            <button class="navbar-toggler position-fixed top-0 start-0 mt-3 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">Carla Nair Gatica Bimbi</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Carla Nair Gatica Bimbi</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home" onclick="openCard('home')">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home" onclick="openCard('home')">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#aboutme" onclick="openCard('aboutme')">About me</a>
+                    <a class="nav-link" href="#aboutme" onclick="openCard('aboutme')">Sobre mí</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#experience" onclick="openCard('experience')">My experiece</a>
+                      <a class="nav-link" href="#experience" onclick="openCard('experience')">Mi experiencia</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#portfolio" onclick="openCard('portfolio')">Portfolio</a>
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> 
           </div>
         </nav>
+
         
     </header>
         <section class="main" id="home">
@@ -226,7 +227,7 @@
                 <li><a href="#musica" onclick="openGallery('musica')">Música</a></li>
                 <li><a href="#videojuegos" onclick="openGallery('videojuegos')">Videojuegos</a></li>
                 <li><a href="#redes" onclick="openGallery('redes')">Redes sociales</a></li>
-                <li>UX/UI</li><h6 class="badge badge-pill badge-secondary">soon</h6>
+                <li>UX/UI<span class="badge-pill badge-secondary">soon</span></li>
               </ul>
             </div>
             
@@ -261,29 +262,27 @@
                 <div class="row">
                   <div class="col-4 espacio">
                     <p>Grabación</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0eQyalsrvg5QifTF2NqW2d?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0eQyalsrvg5QifTF2NqW2d?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                   <div class="col-4 espacio">
                     <p>Grabación de voces</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5nTy39Xhq5toEXXqltO4Gs?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5nTy39Xhq5toEXXqltO4Gs?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                   <div class="col-4 espacio">
                     <p>Edición</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0QeHHHdFmyS3aTlrCVw4cG?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0QeHHHdFmyS3aTlrCVw4cG?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
-                </div>
-                <div class="row">
                   <div class="col-4 espacio">
                     <p>Grabación y mezcla</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2lnod0O3b7LjtEPOi0TLvh?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2lnod0O3b7LjtEPOi0TLvh?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                   <div class="col-4 espacio">
                     <p>Grabación de voz</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3fY75yZr14oXjtljGTAhQ6?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3fY75yZr14oXjtljGTAhQ6?utm_source=generator&theme=0" width="100%" height="100%2" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                   <div class="col-4 espacio">
                     <p>Mastering</p>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2sLKkGo8Flv5jNacII7eam?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2sLKkGo8Flv5jNacII7eam?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                 </div>
               </div>
@@ -292,61 +291,48 @@
                 <div class="row">
                   <div class="col-6 espacio">
                     <p>Música y sfx</p>
-                    <iframe frameborder="0" src="https://itch.io/embed/2891357?linkback=true&amp;border_width=0&amp;bg_color=E9C0B3&amp;fg_color=212529&amp;link_color=808080&amp;border_color=ffffff" width="550px" height="165px"><a href="https://heartgeist.itch.io/gato-loop">Gato Loop by Mariana Muñoz, Mireysa, Karssiopeia, karlix</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/2891357?linkback=true&amp;border_width=0&amp;bg_color=E9C0B3&amp;fg_color=212529&amp;link_color=808080&amp;border_color=ffffff" width="100%" height="100%"><a href="https://heartgeist.itch.io/gato-loop">Gato Loop by Mariana Muñoz, Mireysa, Karssiopeia, karlix</a></iframe>
                   </div>
                   <div class="col-6 espacio">
                     <p>Música y sfx</p>
-                    <iframe frameborder="0" src="https://itch.io/embed/2302742?border_width=0&amp;bg_color=E9C0B3&amp;fg_color=212529&amp;link_color=808080&amp;border_color=ffffff" width="550px" height="165px"><a href="https://creepiestweirdo.itch.io/danis-dream">Dani's Dream by Federico Poliseno, karlix, MissingAlibi, TentacleMaiden, FrankuB</a></iframe>
-                  </div>
-                  <!--<div class="col-4 espacio">
-                    <p>Música incidental para proyecto</p>
-                    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/_RrihlHJ3tw?si=_7KEUwMGYwiargl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                  </div>-->
-                </div>
-                <div class="row">
-                  <div class="col-6 espacio">
-                    <p>Música incidental para proyecto</p>
-                    <iframe width="550px" height="309px" src="https://www.youtube.com/embed/_RrihlHJ3tw?si=_7KEUwMGYwiargl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/2302742?border_width=0&amp;bg_color=E9C0B3&amp;fg_color=212529&amp;link_color=808080&amp;border_color=ffffff" width="100%" height="100%"><a href="https://creepiestweirdo.itch.io/danis-dream">Dani's Dream by Federico Poliseno, karlix, MissingAlibi, TentacleMaiden, FrankuB</a></iframe>
                   </div>
                   <div class="col-6 espacio">
                     <p>Música incidental para proyecto</p>
-                    <iframe width="550px" height="309px" src="https://www.youtube.com/embed/EqIJj9J6NwY?si=OTVpAyX01PUTO7wi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_RrihlHJ3tw?si=_7KEUwMGYwiargl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                   </div>
-                  <!--<div class="col-4 espacio">
-                    <img src="img/images.jpg">
-                  </div>
-                  <div class="col-4 espacio">
-                    <img src="img/images.jpg">
-                  </div>-->
+                  <div class="col-6 espacio">
+                    <p>Música incidental para proyecto</p>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/EqIJj9J6NwY?si=OTVpAyX01PUTO7wi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>                  
                 </div>
               </div>
 
               <div class="galeria oculta" id="redes">
                 <div class="row">
                   <div class="col-4 espacio">
-                    <p>Aural Escuela</p>
-                    <img src="img/images.jpg">
+                    <p>Aural Escuela 2024</p>
+                    <a href="https://www.instagram.com/auralescuela/" target="_blank"><img src="img/portfolio/socialmedia/auralescuela.jpg"></a>
                   </div>
                   <div class="col-4 espacio">
                     <p>Estudio Aural</p>
-                    <a href="https://www.instagram.com/estudioaural/#" target="_blank"><img src="img/portfolio/socialmedia/estudioaural.png"></a>
+                    <a href="https://www.instagram.com/estudioaural/#" target="_blank"><img src="img/portfolio/socialmedia/auralestudio.jpg"></a>
                   </div>
                   <div class="col-4 espacio">
                     <p>Audio Engineering Society Argentina - Caper 2024</p>
-                    <img src="img/portfolio/socialmedia/aesarg.png">
+                    <img src="img/portfolio/socialmedia/aescaper.jpg">
                   </div>
-                </div>
-                <div class="row">
                   <div class="col-4 espacio">
                     <p>Audio Engineering Society Argentina - Cordoba 2024</p>
-                    <img src="img/portfolio/socialmedia/aesarg.png">
+                    <a href="https://www.instagram.com/p/C_Okhfivna3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="img/portfolio/socialmedia/aescordoba.jpg"></a>
                   </div>
                   <div class="col-4 espacio">
                     <p>Audio Expertos</p>
-                    <img src="img/images.jpg">
+                    <img src="img/portfolio/socialmedia/audioexpertos.jpg">
                   </div>
                   <div class="col-4 espacio">
-                    <img src="img/images.jpg">
+                    <p>aural escuela 2023</p>
+                    <img src="img/portfolio/socialmedia/auralescuela23.jpg">
                   </div>
                 </div>
               </div>
