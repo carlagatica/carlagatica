@@ -17,6 +17,9 @@ section {
 .navbar-toggler-icon {
     filter:brightness(100);
 }
+.navbar-toggler {
+    background-color: rgba(233, 192, 179, 0.7)!important;
+}
 .nav-link:hover {
     background-color: #E9C0B3;
 }
