@@ -107,7 +107,9 @@ const translations = {
 
       "pitvoice.visualizaciones": "Visualizaciones",
       "pitvoice.meGusta": "Me gusta",
-      "pitvoice.comentarios": "Comentarios"
+      "pitvoice.comentarios": "Comentarios",
+      "pitvoice.saved":"Guardado",
+      "pitvoice.sent":"Compartido"
     },
   
     en: {
@@ -217,6 +219,8 @@ const translations = {
 
       "pitvoice.visualizaciones": "Views",
       "pitvoice.meGusta": "Likes",
-      "pitvoice.comentarios": "Comments"
+      "pitvoice.comentarios": "Comments",
+      "pitvoice.saved":"Saved",
+      "pitvoice.sent":"Shared"
     }
   };

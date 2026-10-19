@@ -539,7 +539,7 @@ section {
             background-color: #E9C0B3;
             display: inline-block;
         }
-        p.views p.likes p.comment{
+        p.views p.likes p.comment p.saved p.sent{
             font-size: 1rem;
             font-weight: 500;            
         }
@@ -564,6 +564,18 @@ section {
             padding-right: 0.7rem;
             font: var(--fa-font-solid);
             content: '\f075';
+            color: #808080;
+        }
+        .saved::before {
+            padding-right: 0.7rem;
+            font: var(--fa-font-solid);
+            content: '\f02e';
+            color: #808080;
+        }
+        .sent::before {
+            padding-right: 0.7rem;
+            font: var(--fa-font-solid);
+            content: '\f064';
             color: #808080;
         }
         p.job {
