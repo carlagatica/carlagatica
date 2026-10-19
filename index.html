@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <script src="js/color-modes.js"></script>
     <meta charset="UTF-8">
@@ -18,17 +18,17 @@
 </head>
 <body class="parallax">
     <header>
-      <!-- language select        
-      <div class="btn-group btn-group-toggle language" data-toggle="buttons">
-        <label class="btn btn-secondary active" >
-          <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-          <img src="img/arg.png">
-        </label>
-        <label class="btn btn-secondary">
-          <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-          <img src="img/usa.png"></button>
-        </label>
-      </div>--> 
+      <!-- language select     -->    
+      <div class="language" aria-label="Select language">
+        <button type="button" class="language-btn active"
+                data-language="es" aria-label="Español" aria-pressed="true">
+          <img src="img/arg.png" alt="Español">
+        </button>
+        <button type="button" class="language-btn"
+                data-language="en" aria-label="English" aria-pressed="false">
+          <img src="img/uk.png" alt="English">
+        </button>
+      </div>
 
         <nav class="navbar py-0" aria-label="Light offcanvas navbar">
           <div class="container-fluid">
@@ -43,16 +43,16 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home" onclick="openCard('home')">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="#home" onclick="openCard('home')" data-i18n="nav.home">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#aboutme" onclick="openCard('aboutme')">Sobre mí</a>
+                    <a class="nav-link" href="#aboutme" onclick="openCard('aboutme')" data-i18n="nav.about">Sobre mí</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#experience" onclick="openCard('experience')">Mi experiencia</a>
+                      <a class="nav-link" href="#experience" onclick="openCard('experience')" data-i18n="nav.experience">Mi experiencia</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="#portfolio" onclick="openCard('portfolio')">Portfolio</a>
+                      <a class="nav-link" href="#portfolio" onclick="openCard('portfolio')" data-i18n="nav.portfolio">Portfolio</a>
                   </li>
                 </ul>
               </div>
@@ -77,140 +77,122 @@
               </div>
               <div class="row">
                 <div class="col-md-12 parta">
-                  <h1>Sobre mi</h1>
+                  <h1 data-i18n="about.title">Sobre mi</h1>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4 part2">
-                  <h2>Introducción personal</h2>
+                  <h2 data-i18n="about.introTitle">Introducción personal</h2>
                   <div class="minicont">
-                    <p>Hola! Soy Carla Gatica, graduada en Tecnicatura en Sonido y Grabación y Producción Musical en Aural Escuela de Audio.<br><br>
-                    He trabajado en el campo del sonido durante 10 años, donde he desarrollado habilidades en grabación, edición y mezcla. <br><br>
-                    Especializada en audio inmersivo, me apasiona la creatividad y la innovación, y busco constantemente aprender nuevas técnicas y herramientas.<br><br>
-                    Mi objetivo es crear experiencias sonoras impactantes y estoy emocionada de contribuir a proyectos que inspiren y conecten.</p><br>
-                    <p>Podés escribirme a carla.gatica@gmail.com</p>
-                    <p>o contactarme a través de <a href="https://www.linkedin.com/in/carlagatica" target="blank">mi perfil de linkedin</a></p>
+                    <p data-i18n="about.intro">
+                      Soy técnica en Sonido y Grabación, con formación en Producción Musical en Aural Escuela de Audio. Desde hace años trabajo en grabación, edición, mezcla, mastering y diseño sonoro, y combino mi actividad profesional con la docencia y la capacitación técnica.
+                    </p>
+                    <p data-i18n="about.audiovisual">
+                      Actualmente estoy ampliando mi recorrido hacia la producción audiovisual. A través de Pit Voice, mi proyecto de divulgación sobre Fórmula 1 en español, trabajo en investigación, guion y desarrollo de contenidos audiovisuales.
+                    </p>
+                    <p data-i18n="about.goal">
+                      Me interesa trasladar mi experiencia técnica y creativa a proyectos de producción audiovisual, medios deportivos y contenidos vinculados al automovilismo.
+                    </p>
+                    <p data-i18n="contact.email">
+                      Podés escribirme a carla.gatica@gmail.com
+                    </p>
+                    <p>
+                      <span data-i18n="contact.linkedin">O contactarme a través de</span>
+                      <a href="https://www.linkedin.com/in/carlagatica"
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         data-i18n="contact.linkedinLink">mi perfil de LinkedIn</a>
+                    </p>
                   </div>
                 </div>
                 <div class="col-md-4 part2">
-                  <h2>Habilidades</h2>
-                  <div class="minicont">
-                    <h4>Grabación y mezcla de sonido</h4>
-                    <h5>Pro Tools</h5>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="95"
-                        aria-valuemin="0" aria-valuemax="100" style="width:95%">
-                          <span class="sr-only">95% Complete</span>
-                        </div>
-                      </div>
-                    <h5>Reaper</h5>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                          <span class="sr-only">80% Complete</span>
-                        </div>
-                      </div>
-                    <h5>Ableton Live</h5>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                          <span class="sr-only">60% Complete</span>
-                        </div>
-                      </div>
-                    <br><h4>Diseño sonoro para videojuegos</h4>
-                    <h5>Wwise</h5>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="80"
-                      aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                        <span class="sr-only">80% Complete</span>
+                  <h2 data-i18n="about.skills">Habilidades</h2>
+                
+                  <div class="minicont skills-list">
+                
+                    <div class="skill-category">
+                      <h4 data-i18n="skills.rec">Grabación y mezcla de sonido</h4>
+                      <div class="skill-tags">
+                        <span>Pro Tools</span>
+                        <span>Reaper</span>
+                        <span>Ableton Live</span>
                       </div>
                     </div>
-                    <h5>FMOD</h5>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="45"
-                      aria-valuemin="0" aria-valuemax="100" style="width:45%">
-                        <span class="sr-only">45% Complete</span>
+                
+                    <div class="skill-category">
+                      <h4 data-i18n="skills.games">Diseño sonoro para videojuegos</h4>
+                      <div class="skill-tags">
+                        <span>Wwise</span>
+                        <span>FMOD</span>
+                        <span>Unity</span>
                       </div>
                     </div>
-                    <h5>Unity</h5>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="60"
-                      aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                        <span class="sr-only">60% Complete</span>
+                
+                    <div class="skill-category">
+                      <h4 data-i18n="skills.immersive">Audio inmersivo</h4>
+                      <div class="skill-tags">
+                        <span>Dolby Atmos</span>
+                        <span>Ambisonics</span>
                       </div>
                     </div>
-                    <h5>Dolby Atmos</h5>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                          <span class="sr-only">100% Complete</span>
-                        </div>
-                      </div>
-                      <h5>Ambisonics</h5>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100" style="width:100%">
-                          <span class="sr-only">100% Complete</span>
-                        </div>
-                      </div>
-                    <br><h4>Diseño digital</h4>
-                    <h5>Photoshop</h5>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="85"
-                      aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                        <span class="sr-only">85% Complete</span>
+
+                    <div class="skill-category">
+                      <h4 data-i18n="skills.video">Edición de video</h4>
+                      <div class="skill-tags">
+                        <span>CapCut</span>
                       </div>
                     </div>
-                    <h5>Canva</h5>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                        <span class="sr-only">90% Complete</span>
+
+                    <div class="skill-category">
+                      <h4 data-i18n="skills.design">Diseño digital</h4>
+                      <div class="skill-tags">
+                        <span>Photoshop</span>
+                        <span>Canva</span>
+                        <span>Illustrator</span>
+                        <span>AutoCAD</span>
+                        <span>3ds Max</span>
                       </div>
                     </div>
-                    <h5>Illustrator</h5>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                      aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                        <span class="sr-only">70% Complete</span>
-                      </div>
-                    </div>
-                    <h5>Autocad</h5>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="95"
-                      aria-valuemin="0" aria-valuemax="100" style="width:95%">
-                        <span class="sr-only">95% Complete</span>
-                      </div>
-                    </div>
-                    <h5>3Dstudio max</h5>
-                    <div class="progress">
-                      <div class="progress-bar" role="progressbar" aria-valuenow="75"
-                      aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                        <span class="sr-only">75% Complete</span>
-                      </div>
-                    </div>
+                
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4 part3">
-              <h2>Intereses personales</h2>
-              <p> Soy una persona creativa y multifacética, y en mi tiempo libre disfruto de diversas actividades que estimulan mi imaginación y habilidades.<br></p>
-              
-              <p class="brush">Pintar es una de mis pasiones. Encuentro en la pintura una forma de expresión que me permite plasmar mis emociones y pensamientos en el lienzo. Cada trazo es una oportunidad para explorar nuevos colores y técnicas.<br></p>
-                    
-              <p class="design">Además, me gusta hacer diseños, ya sea a través del diseño gráfico o de proyectos de arte digital. Me encanta crear composiciones visuales que comunican ideas y cuentan historias.<br></p>
-                    
-              <p class="game">También disfruto de jugar videojuegos, lo que me ofrece una forma divertida de sumergirme en mundos fantásticos y retos. A través de los videojuegos, he desarrollado habilidades estratégicas y de trabajo en equipo, además de disfrutar de la narrativa y el arte de los mismos. <br></p>
-                    
-              <p class="code">Por último, tengo un gran interés en programar. Me apasiona el proceso de crear y desarrollar aplicaciones y juegos, y me esfuerzo por mejorar mis habilidades de codificación para poder llevar mis ideas a la realidad!<br></p>
-
-              <p>Estoy en constante capacitación en audio inmersivo y audio para videojuegos. Este campo me fascina porque combina tecnología y creatividad, permitiéndome explorar nuevas formas de contar historias a través del sonido y mejorar la experiencia del usuario en entornos interactivos.<br>
-
-              En resumen, mis intereses personales en la pintura, diseño, videojuegos y programación reflejan mi amor por la creatividad y la tecnología, y busco constantemente oportunidades para combinar estas pasiones en mis proyectos.</p>
+              <h2 data-i18n="about.interests">Intereses personales</h2>
+            
+              <p data-i18n="interests.intro">
+                Me interesan la creatividad, la tecnología y las distintas formas de contar historias. Disfruto tanto de crear como de analizar cómo se construyen las experiencias visuales, sonoras e interactivas.
+              </p>
+            
+              <p class="brush" data-i18n="interests.painting">
+                La pintura es una forma de explorar colores, técnicas y composiciones. Me permite experimentar visualmente y desarrollar ideas desde una perspectiva más artística.
+              </p>
+            
+              <p class="design" data-i18n="interests.design">
+                El diseño gráfico y el arte digital me permiten experimentar con recursos visuales y crear composiciones que comuniquen ideas.
+              </p>
+            
+              <p class="video" data-i18n="interests.video">
+                La edición de video me permite combinar imagen, sonido y ritmo para construir una narrativa. Me interesa cómo la selección de planos y el montaje transforman el material grabado en una historia.
+              </p>
+            
+              <p class="motorsport" data-i18n="interests.motorsport">
+                La Fórmula 1 y el automovilismo reúnen varios de mis intereses: la tecnología, la estrategia, la historia y la competencia. Disfruto investigarlos y descubrir los detalles que hacen único a cada circuito, auto y carrera.
+              </p>
+            
+              <p class="game" data-i18n="interests.games">
+                Los videojuegos me interesan por la combinación de narrativa, diseño, sonido y mecánicas. También me gusta explorar cómo estos elementos construyen mundos y experiencias para quienes juegan.
+              </p>
+            
+              <p class="code" data-i18n="interests.programming">
+                La programación es otra forma de materializar ideas y resolver problemas. Me interesa experimentar con herramientas y aprender cómo funcionan las aplicaciones y los sistemas que utilizamos.
+              </p>
             </div>
           </div>
         </section>
+        
+        
         <!-- Experience -->
         <section class="experience hiding" id="experience">
           <div class="row">
@@ -218,147 +200,172 @@
               p
             </div>
             <div class="col-10 part2">
-                <h1>Mi Experiencia</h1>
+                <h1 data-i18n="experience.title">Mi Experiencia</h1>
             </div>
             <div class="col-2 part3">
               <img src="img/carla1.jpg">
             </div>
-            <div class="col-10 part4">
-              <h2>Trabajo, Docencia y Disertaciones</h2>
+            <div class="col-1 part4">
+              <h2 data-i18n="experience.subtitle">Trabajo, Docencia y Disertaciones</h2>
             </div>
-            <div class="col-10 part5">
-              <h2>Trabajos</h2>
-              <div class="resume-items">
-                <div class="resume-item">
-                  <span class="date">4/14 - actualidad</span>                  
-                  <div class="name">Productora e Ing. en sonido</div>
-                  <div class="company">Freelance</div>
-                  <div class="p1">Preproducción | Grabación profesional en estudio | Edición, mezcla y mastering</div>
-                </div> 
-                <div class="resume-item">
-                    <span class="date">7/18 - actualidad</span>                  
-                    <div class="name">Técnica operaria de sonido en vivo</div>
-                    <div class="company">Freelance</div>
-                    <div class="p1">PA y monitores</div>
-                </div>                      
-                <div class="resume-item">
-                  <span class="date">4/19 - 11/21</span>
-                  <div class="name">Técnica asistente de estudio</div>
-                  <div class="company">Estudio 0618</div>
-                  <div class="p1">Asistencia técnica en sesiones de grabación y mezcla profesional | Operación y dirección de grabaciones profesionales</div>
-              </div>                         
+            <div class="col-9 part5">
+              <h2 data-i18n="experience.projects">Proyectos audiovisuales</h2>
+              <div class="resume-item">
+                <span class="date" >07/26 - actualidad</span>
+                <div class="name">Pit Voice</div>
+                <div class="company" data-i18n="experience.pitvoice.company">Proyecto independiente de divulgación sobre Fórmula 1</div>
+                <div class="p1">
+                  <a href="https://www.youtube.com/@PitVoice" target="_blank" rel="noopener noreferrer">
+                    <span class="badge-pill">click me!</span>
+                  </a><span data-i18n="experience.pitvoice.description">Investigación, desarrollo de guiones y producción de contenidos
+                    audiovisuales sobre la historia y los aspectos técnicos del automovilismo.</span>
+                </div>
               </div>
 
-              <h2>Docencia</h2>
+              <h2 data-i18n="experience.professional">Experiencia profesional</h2>
+              <div class="resume-items">
+                <div class="resume-item">
+                  <span class="date">4/14 - actualidad</span>
+                  <div class="name" data-i18n="experience.sound.title">Productora e ingeniera de sonido</div>
+                  <div class="company" data-i18n="experience.freelance">Freelance</div>
+                  <div class="p1" data-i18n="experience.sound.description">
+                    Preproducción, grabación profesional en estudio, edición, mezcla y mastering.
+                  </div>
+                </div>
+
+                <div class="resume-item">
+                  <span class="date">7/18 - actualidad</span>
+                  <div class="name" data-i18n="experience.live.title">Técnica operaria de sonido en vivo</div>
+                  <div class="company" data-i18n="experience.freelance">Freelance</div>
+                  <div class="p1" data-i18n="experience.live.description">Operación de PA y monitores.</div>
+                </div>
+
+                <div class="resume-item">
+                  <span class="date">4/19 - 11/21</span>
+                  <div class="name" data-i18n="experience.assistant.title">Técnica asistente de estudio</div>
+                  <div class="company">Estudio 0618</div>
+                  <div class="p1" data-i18n="experience.assistant.description">
+                    Asistencia técnica en sesiones de grabación y mezcla profesional.
+                    Operación y dirección de grabaciones.
+                  </div>
+                </div>
+              </div>
+
+
+              <h2 data-i18n="experience.teaching">Docencia</h2>
               <div class="resume-items">
                 <div class="resume-item">
                     <span class="date">7/19 - actualidad</span><div class="company">Aural Escuela de Audio</div>
-                    <div class="name">Carrera Tecnicatura en sonido y grabación</div>
+                    <div class="name" data-i18n="experience.aural.degree">Carrera Tecnicatura en sonido y grabación</div>
                     <div class="p1"><ul>
-                      <li>Materia: Producción en estudio</li>
-                      <li>Materia: Introducción al sonido y al diseño sonoro</li>
-                      <li>Materia: Pro Tools.</li>
-                      <li>Materia: Mezcla en estudio avanzada.</li>
-                      <li>Materia: Tecnologías de audio inmersivo.</li>
+                      <li data-i18n="experience.subject.production">Materia: Producción en estudio</li>
+                      <li data-i18n="experience.subject.intro">Materia: Introducción al sonido y al diseño sonoro</li>
+                      <li data-i18n="experience.subject.protools">Materia: Pro Tools.</li>
+                      <li data-i18n="experience.subject.advancedmix">Materia: Mezcla en estudio avanzada.</li>
+                      <li data-i18n="experience.subject.immersive">Materia: Tecnologías de audio inmersivo.</li>
                     </ul></div>
                 </div>
                 <div class="resume-item">
                     <span class="date">3/24 - actualidad</span>
                     <div class="company">Universidad de Palermo</div>
-                    <div class="name">Carrera Licenciatura en creación Sonora</div>
-                    <div class="p1"><ul><li>Materia: Taller de creación sonora 1 (audiovisual)</li></ul></div>
+                    <div class="name" data-i18n="experience.up.degree">Carrera Licenciatura en creación Sonora</div>
+                    <div class="p1"><ul><li data-i18n="experience.subject.audiovisual">Materia: Taller de creación sonora 1 (audiovisual)</li></ul></div>
                 </div>
                 <div class="resume-item">
                   <span class="date">2/22 - 8/22</span>
                   <div class="company">Universidad Nacional de Quilmes</div>
-                  <div class="name">Carrera Licenciatura en música y tecnología</div>
-                  <div class="p1"><ul><li>Materia: Seminario de actualización, temática audio inmersivo. De rotación cuatrimestral</li></ul></div>
+                  <div class="name" data-i18n="experience.unq.degree">Carrera Licenciatura en música y tecnología</div>
+                  <div class="p1"><ul><li data-i18n="experience.subject.seminar">Materia: Seminario de actualización, temática audio inmersivo. De rotación cuatrimestral</li></ul></div>
                 </div>                                
               </div>
-             
-              <h2>Disertaciones</h2>
+            
+              <h2 data-i18n="experience.talks">Disertaciones</h2>
               <div class="resume-items">
                 <div class="resume-item">
                   <span class="date">11 DIC 2023</span>
                   <div class="company">Audio Expertos 2023</div>
-                  <div class="name">Game Audio: la historia de otro casi anónimo</div>
-                  <div class="p1"><a href="https://www.youtube.com/live/GNWPeuofLvs?si=_aEc2Jf85cNHGmtz&t=3867" target="_blank"><span class="badge-pill">click me!</span></a>Curso sobre la historia del audio para videojuegos</div>
+                  <div class="name" data-i18n="experience.gameaudio.title">Game Audio: la historia de otro casi anónimo</div>
+                  <div class="p1"><a href="https://www.youtube.com/live/GNWPeuofLvs?si=_aEc2Jf85cNHGmtz&t=3867" target="_blank" rel="noopener noreferrer"><span class="badge-pill">click me!</span></a><span data-i18n="experience.gameaudio.description">Curso sobre la historia del audio para videojuegos</span></div>
                 </div>
                 <div class="resume-item">
                   <span class="date">7 NOV 2023</span>
                   <div class="company">CAPER 2023</div>
-                  <div class="name">Diseño de paisajes sonoros híbridos para videojuegos</div>
-                  <div class="p1"><a href="https://youtu.be/pqpLwsUrC_k?si=yp-WR95s-oRdjmsU" target="_blank"><span class="badge-pill">click me!</span></a>Desarrollo sobre implementación de audio inmersivo en conjunto con audio estéreo en entornos de videojuegos mediante el uso de Wwise</div>
+                  <div class="name" data-i18n="experience.hybrid.title">Diseño de paisajes sonoros híbridos para videojuegos</div>
+                  <div class="p1"><a href="https://youtu.be/pqpLwsUrC_k?si=yp-WR95s-oRdjmsU" target="_blank" rel="noopener noreferrer"><span class="badge-pill">click me!</span></a><span data-i18n="experience.hybrid.description">Desarrollo sobre implementación de audio inmersivo en conjunto con audio estéreo en entornos de videojuegos mediante el uso de Wwise</span></div>
                 </div>
                 <div class="resume-item">
                   <span class="date">1 NOV 2022</span>
                   <div class="company">CAPER 2022</div>
-                  <div class="name">AES-AATIA: estrategias de inversión para el estudio</div>
-                  <div class="p1">Panel de disertación sobre estrategias de inversión para el estudio<a href="https://youtu.be/ROlldxZ75ss?si=HIYBIwObuVNJRMrl" target="_blank"><span class="badge-pill">click me!</span></a></div>
+                  <div class="name" data-i18n="experience.investment.title">AES-AATIA: estrategias de inversión para el estudio</div>
+                  <div class="p1"><a href="https://youtu.be/ROlldxZ75ss?si=HIYBIwObuVNJRMrl" target="_blank" rel="noopener noreferrer"><span class="badge-pill">click me!</span></a><span data-i18n="experience.investment.description">Panel de disertación sobre estrategias de inversión para el estudio</span></div>
                 </div>
                 <div class="resume-item">
                   <span class="date">1 NOV 2022</span>
                   <div class="company">CAPER 2022</div>
-                  <div class="name">Propuesta para show en vivo de audio inmersivo</div>
-                  <div class="p1">Demostración de show en vivo con implementación de sistema inmersivo</div>
+                  <div class="name" data-i18n="experience.immersive.live.title">Propuesta para show en vivo de audio inmersivo</div>
+                  <div class="p1" data-i18n="experience.immersive.live.description">Demostración de show en vivo con implementación de sistema inmersivo</div>
                 </div>
                 <div class="resume-item">
                   <span class="date">22 SEP 2022</span>
                   <div class="company">AES Latin American Conference</div>
-                  <div class="name">Mujeres con ciencia y arte</div>
-                  <div class="p1">Panel de disertación sobre el estado actual de la industria y la participación de las mujeres en la misma</div>
+                  <div class="name" data-i18n="experience.women.title">Mujeres con ciencia y arte</div>
+                  <div class="p1" data-i18n="experience.women.description">Panel de disertación sobre el estado actual de la industria y la participación de las mujeres en la misma</div>
                 </div>
                 <div class="resume-item">
                   <span class="date">22 SEP 2022</span>
                   <div class="company">AES Latin American Conference</div>
-                  <div class="name">Workflow y técnicas de mezlca con Ambisonics</div>
-                  <div class="p1">Demostración de flujos de trabajo para mezclas con Ambisonics</div>
+                  <div class="name" data-i18n="experience.ambisonics.title">Workflow y técnicas de mezlca con Ambisonics</div>
+                  <div class="p1" data-i18n="experience.ambisonics.description">Demostración de flujos de trabajo para mezclas con Ambisonics</div>
                 </div>
                 <div class="resume-item">
                     <span class="date">OCT - NOV 2021</span>
                     <div class="company">Licenciatura en Artes y Tecnología Universidad Nacional de Quilmes</div>
-                    <div class="name">Audio inmersivo: de la grabación a la reproducción</div>
-                    <div class="p1">Capacitación sobre cómo trabajar con audio inmersivo desde la grabación, pasando por la mezcla hasta formas de reproducirlo</div>
+                    <div class="name" data-i18n="experience.immersive.course.title">Audio inmersivo: de la grabación a la reproducción</div>
+                    <div class="p1" data-i18n="experience.immersive.course.description">Capacitación sobre cómo trabajar con audio inmersivo desde la grabación, pasando por la mezcla hasta formas de reproducirlo</div>
                 </div>
                 <div class="resume-item">
                     <span class="date">9 OCT 2020</span>
                     <div class="company">IV Conferencias de producción musical Conservatorio Astor Piazzolla</div>
-                    <div class="name">Audio Inmersivo</div>
-                    <div class="p1"><a href="https://www.youtube.com/live/lJDq3l9--IQ?si=bm9paTvYJnbr8ZUt" target="_blank"><span class="badge-pill">click me!</span></a>Introducción al audio inmersivo</div>
+                    <div class="name data-i18n="experience.immersive.title">Audio Inmersivo</div>
+                    <div class="p1"><a href="https://www.youtube.com/live/lJDq3l9--IQ?si=bm9paTvYJnbr8ZUt" target="_blank" rel="noopener noreferrer"><span class="badge-pill">click me!</span></a><span data-i18n="experience.immersive.intro">Introducción al audio inmersivo</span></div>
                 </div>
                 <div class="resume-item">
                   <span class="date">9 ABR 2020</span>
                   <div class="company">Webinars en cuarentena - AES Argentina</div>
-                  <div class="name"> Audio 8D?  Mejor hablemos de audio inmersivo</div>
-                  <div class="p1"><a href="https://www.youtube.com/live/36xzYp1xblo?si=QkxeN3A4GMpdfGPs" target="_blank"><span class="badge-pill">click me!</span></a>Webinar sobre audio inmersivo</div>
+                  <div class="name" data-i18n="experience.webinar.title"> Audio 8D?  Mejor hablemos de audio inmersivo</div>
+                  <div class="p1"><a href="https://www.youtube.com/live/36xzYp1xblo?si=QkxeN3A4GMpdfGPs" target="_blank" rel="noopener noreferrer"><span class="badge-pill">click me!</span></a><span data-i18n="experience.webinar.description">Webinar sobre audio inmersivo</span></div>
                 </div>                                
               </div>
             </div>
+          </div>
         </section>
+
         <!-- Portfolio -->
         <section class="portfolio hiding" id="portfolio">
 
           <div class="row">
             <div class="col-2 part1">
-              p
+              
             </div>
-            <div class="col-8 part2">
+            <div class="col-2 part2">
               <h1>Portfolio</h1>
-            </div>
+            </div>            
           </div>
 
           <div class="row">
+            <div class="col-2 part1"></div>
             <div class="col-10 part3">
               <ul>
-                <li><a href="#musica" onclick="openGallery('musica')">Música</a></li>
-                <li><a href="#videojuegos" onclick="openGallery('videojuegos')">Videojuegos</a></li>
-                <li><a href="#redes" onclick="openGallery('redes')">Redes sociales</a></li>
-                <li>UX/UI<span class="badge-pill badge-secondary">soon</span></li>
+                <li><a href="#pitvoice" onclick="openGallery('pitvoice')">Pit Voice</a></li>
+                <li><a href="#musica" onclick="openGallery('musica')" data-i18n="portfolio.music">Música</a></li>
+                <li><a href="#videojuegos" onclick="openGallery('videojuegos')" data-i18n="portfolio.games">Videojuegos</a></li>
+                <li><a href="#redes" onclick="openGallery('redes')" data-i18n="portfolio.social">Redes sociales</a></li>
+                <!--<li>UX/UI<span class="badge-pill badge-secondary">soon</span></li>-->
               </ul>
             </div>
             
             <div class="part4">
-              <h2>Galería</h2>
+              <!--<h2>Galería</h2>-->
               <div class="galeria oculta" id="disenios">
                 <div class="row">
                   <div class="col-4 espacio">
@@ -384,30 +391,48 @@
                 </div>
               </div>
 
-              <div class="galeria muestra" id="musica">
+              <div class="galeria oculta" id="musica">
                 <div class="row">
                   <div class="col-4 espacio">
-                    <p>Grabación</p>
+                    <h3>Quinteto Astor Piazzolla</h3>
+                    <p data-i18n="musica.t1">Le Grand Tango Nominado: Latin Grammy 2026 Mejor Álbum de Tango</p>
+                    <p class="job" data-i18n="musica.j1">Participación en grabación y edición de audio</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0T8QrtI9tl6OZK4bcBkmz9?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                  </div>
+                  <div class="col-4 espacio">
+                    <h3>Jivers Swing</h3>
+                    <p>Swingin' MEW</p>
+                    <p class="job" data-i18n="musica.j2">Grabación</p>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0eQyalsrvg5QifTF2NqW2d?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                   <div class="col-4 espacio">
-                    <p>Grabación de voces</p>
+                    <h3>Bambi & Miranda!</h3>
+                    <p>Cuentos los días</p>
+                    <p class="job" data-i18n="musica.j3">Grabación de voces</p>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5nTy39Xhq5toEXXqltO4Gs?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                   <div class="col-4 espacio">
-                    <p>Edición</p>
+                    <h3>Silvia Gers</h3>
+                    <p>Renaciendo</p>
+                    <p class="job" data-i18n="musica.j4">Edición</p>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0QeHHHdFmyS3aTlrCVw4cG?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                   <div class="col-4 espacio">
-                    <p>Grabación y mezcla</p>
+                    <h3>Alexandra Panópulos</h3>
+                    <p>ADN</p>
+                    <p class="job" data-i18n="musica.j5">Grabación y mezcla</p>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2lnod0O3b7LjtEPOi0TLvh?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                   <div class="col-4 espacio">
-                    <p>Grabación de voz</p>
+                    <h3>María Domenech</h3>
+                    <p>Por eso fuimos</p>
+                    <p class="job" data-i18n="musica.j6">Grabación de voz</p>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3fY75yZr14oXjtljGTAhQ6?utm_source=generator&theme=0" width="100%" height="100%2" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                   <div class="col-4 espacio">
-                    <p>Mastering</p>
+                    <h3>unaflorsintética</h3>
+                    <p>Una flor sintética</p>
+                    <p class="job">Mastering</p>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2sLKkGo8Flv5jNacII7eam?utm_source=generator&theme=0" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                   </div>
                 </div>
@@ -463,6 +488,132 @@
                 </div>
               </div>
               
+              <div class="galeria muestra" id="pitvoice">
+
+              <!-- PORTFOLIO PIT VOICE -->
+
+              <div class="row">
+
+                <!-- LADO 1: TÉCNICO -->
+                <div class="col-6 espacio">
+                  <h3 data-i18n="pitvoice.tecnica">Técnica</h3>
+                  <p data-i18n="pitvoice.tecnica.descripcion">
+                    Investigación y guion de videos explicativos sobre aspectos técnicos de la Fórmula 1. Desarrollo de recursos gráficos y animaciones para comunicar conceptos complejos de forma clara, con locución, edición y postproducción audiovisual.
+                  </p>
+
+                  <div class="espacio">
+                    <p class="job">YouTube</p>
+                  
+                    <div class="video-youtube"
+                         onclick="this.innerHTML='<iframe src=&quot;https://www.youtube.com/watch?v=VHJYOun7upk?autoplay=1&quot; title=&quot;MADRING: así es el circuito que llegó para desafiar a la F1&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media; picture-in-picture&quot; allowfullscreen></iframe>'">
+                  
+                      <img
+                        src="https://img.youtube.com/vi/VHJYOun7upk/maxresdefault.jpg"
+                        alt="La otra carrera: fuera de cámaras">
+                  
+                      <span class="play-button">▶</span>
+                    </div>
+                  </div>
+
+                  <div class="espacio">
+                    <p class="job">TikTok</p>
+                    <a href="https://www.tiktok.com/@pitvoice/video/7669614130206215432" target="_blank"   rel="noopener noreferrer"> 
+                    <img src="img/portfolio/pitvoice/strategy.png" alt="Ver video de Pit Voice en TikTok"     class="video-thumbnail">
+                    </a>                    
+                  </div>
+
+                  <div class="espacio">
+                    <p class="job">Instagram</p>
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DbqkA7jhmFn/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DbqkA7jhmFn/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DbqkA7jhmFn/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de Pit Voice F1 (@pitvoice)</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+                  </div>
+                </div>
+
+                <!-- LADO 2: CIRCUITOS -->
+                <div class="col-6 espacio">
+                  <h3 data-i18n="pitvoice.circuitos">Circuitos</h3>
+                  <p data-i18n="pitvoice.circuitos.descripcion">
+                    Investigación y guion de videos sobre circuitos de Fórmula 1, combinando historia, características del trazado y datos relevantes. Locución, edición y postproducción, con adaptación del contenido a distintos formatos y plataformas.
+                  </p>
+
+                  <div class="espacio">
+                    <p class="job">YouTube</p>
+                  
+                    <div class="video-youtube"
+                         onclick="this.innerHTML='<iframe src=&quot;https://www.youtube.com/embed/7vDrYng3oDo?autoplay=1&quot; title=&quot;MADRING: así es el circuito que llegó para desafiar a la F1&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media; picture-in-picture&quot; allowfullscreen></iframe>'">
+                  
+                      <img
+                        src="https://img.youtube.com/vi/7vDrYng3oDo/maxresdefault.jpg"
+                        alt="MADRING: así es el circuito que llegó para desafiar a la F1">
+                  
+                      <span class="play-button">▶</span>
+                    </div>
+                  </div>
+
+                  <div class="espacio">
+                    <p class="job">TikTok</p>
+                    <a href="https://www.tiktok.com/@pitvoice/video/7684029598891265300" target="_blank"   rel="noopener noreferrer"> 
+                    <img src="img/portfolio/pitvoice/madring.png" alt="Ver video de Pit Voice en TikTok"     class="video-thumbnail">
+                    </a>                     
+                  </div>
+
+                  <div class="espacio">
+                    <p class="job">Instagram</p>
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DdH7HVPvIPz/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DdH7HVPvIPz/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DdH7HVPvIPz/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de Pit Voice F1 (@pitvoice)</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+                  </div>
+                </div>
+
+              </div>
+
+              <hr>
+
+              <!-- CONTENIDO DESTACADO -->
+              <div class="row">
+                <div class="col-12 espacio">
+                  <h2 data-i18n="pitvoice.destacado">Contenido destacado</h2>
+                  <p data-i18n="pitvoice.destacado.descripcion">
+                    Una explicación sobre la física y el comportamiento del automóvil
+                    para entender cómo un Fórmula 1 puede mantener el agarre en curva.
+                  </p>
+
+                  <div class="row">
+                  <hr>
+                    <!-- VIDEO DESTACADO -->
+                    <div class="col-6 espacio">
+                      <a href="https://www.tiktok.com/@pitvoice/video/7661761647253458184" target="_blank"   rel="noopener noreferrer"> 
+                    <img src="img/portfolio/pitvoice/miniaturatiktok.png" alt="Ver video de Pit Voice en TikTok"     class="video-thumbnail">
+                    </a> 
+                      
+                    </div>
+
+                    <!-- MÉTRICAS -->
+                    <div class="col-6 espacio metricas">
+                      <div>
+                        <p class="views" data-i18n="pitvoice.visualizaciones">Visualizaciones</p>
+                        <p class="metrics">417K</p>
+                      </div>
+
+                      <div>
+                        <p class="likes" data-i18n="pitvoice.meGusta">Me gusta</p>
+                        <p class="metrics">68K</p>
+                        
+                      </div>
+
+                      <div>
+                        <p class="comment" data-i18n="pitvoice.comentarios">Comentarios</p>
+                        <p class="metrics">348</p>
+                        
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              
+              
+              </div>
         </section>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -472,4 +623,6 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/show-hide.js"></script>
 <script src="js/galeria.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/language.js"></script>
 </html>
